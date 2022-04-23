@@ -1,4 +1,4 @@
-# Ipl_win_probability_predictor_Project
+# IPL_Win_Probability_Predictor_Project
 
 - Objective :  Ipl Score predict will tell the win and loss probablity of two teams playing at any particular point , give details such as batting team , 
   bowling team , target , venue , total runs scored , total overs completed , wickets details 

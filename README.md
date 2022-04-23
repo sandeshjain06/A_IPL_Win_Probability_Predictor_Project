@@ -1,11 +1,11 @@
-# Ipl_score_predict_Project
+# Ipl_win_probability_predictor_Project
 
-- Objective of this Project :
-
-Ipl Score predict will tell the win and loss probablity of two teams playing at any particular point , give details such as batting team , bowling team , target , venue , total runs scored , total overs completed , wickets details 
+- Objective :  Ipl Score predict will tell the win and loss probablity of two teams playing at any particular point , give details such as batting team , 
+  bowling team , target , venue , total runs scored , total overs completed , wickets details 
 
 
 - Click here to check the dataset - https://www.kaggle.com/datasets/ramjidoolla/ipl-data-set
+
 
 - Click here to check the website hosted on Heruko - https://ipl-score--predictor.herokuapp.com/
 
@@ -13,6 +13,7 @@ Ipl Score predict will tell the win and loss probablity of two teams playing at 
 Screenshot of the project 
 
 ![image](https://user-images.githubusercontent.com/91243691/164946113-e3d975e7-235f-47c4-b74c-8e8d97632f42.png)
+
 
 1. Explanation about the dataset Details  - 2 dataset are used - teams.csv and delivery.csv
 

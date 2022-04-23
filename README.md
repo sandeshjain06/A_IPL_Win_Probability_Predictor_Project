@@ -41,6 +41,38 @@ Deliveries.csv - (179078, 21)
 - Output that we require from the datset is  Batting team , Bowling team , city , runs_left , balls_left, wickets_left, total_runs , current RunRate , 
 required RunRate , Result
 
+- Top 8 teams which we are going to consider are -  [Sunrisers Hyderabad', 'Mumbai Indians', 'Royal Challengers Bangalore',
+       'Kolkata Knight Riders', 'Kings XI Punjab', 'Chennai Super Kings', 'Rajasthan Royals', 'Delhi Capitals' ] 
+       
+       
+-  Batting , Bowling , City  data is already available in the data set .
+
+
+- Runs_left  -   check the runs scored every ball and do the cumsum to add the scores and deduct it from the total score to get the current score required.
+
+- Overs_left -  To calculate the overs remaining , below is the formula
+
+delivery_df['balls_left']=126-(delivery_df['over']* 6 + delivery_df['ball'])
+
+
+- Wickets_left -  We can get that by player-dismissed feature and applying  delivery_df.groupby('match_id')['player_dismissed'].cumsum()
+
+- Current run rate 
+
+- delivery_df['crr']=(delivery_df['current_score'] * 6) / (120-delivery_df['balls_left'])
+
+- Required Run rate
+
+- delivery_df['rrr']=(delivery_df['runs_left'] * 6) / (delivery_df['balls_left'])
+
+- To obtain the results , check whether the batting team is same as winner or not , and replace 1 if not then replace the values by  0 .
+
+
+3. Apply train_test_split , apply  ML algorithm , check the accuracy score , import the pickle file.
+
+
+4. Created website on pycharm using Streamlit .
+
 
 
 
